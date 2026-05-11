@@ -234,7 +234,7 @@ body{
 }
 .floating{
 
-    position:fixed;
+    position:sticky;
     right:20px;
     bottom:20px;
     z-index:9999;
@@ -413,7 +413,36 @@ iframe{
 </head>
 
 <body>
+<!-- FLOATING TOOLBAR -->
 
+<div class="floating">
+
+  <button class="btn btn-primary"
+      onclick="createData()">
+      💾 Simpan
+  </button>
+
+  <button class="btn btn-warning"
+      onclick="updateData()">
+      🛠️ Update
+  </button>
+
+  <button class="btn btn-danger"
+      onclick="deleteData()">
+      🗑️ Hapus
+  </button>
+
+  <button class="btn btn-secondary"
+      onclick="printResume()">
+      🖨️ Cetak
+  </button>
+
+  <button class="btn btn-dark"
+      onclick="resetForm()">
+      ↺ Reset
+  </button>
+
+</div>
 <div class="container py-4">
 
 <div class="text-center mb-4">
@@ -472,36 +501,7 @@ iframe{
     </button>
 
   </div>
-<!-- FLOATING TOOLBAR -->
 
-<div class="floating">
-
-  <button class="btn btn-primary"
-      onclick="createData()">
-      💾 Simpan
-  </button>
-
-  <button class="btn btn-warning"
-      onclick="updateData()">
-      🛠️ Update
-  </button>
-
-  <button class="btn btn-danger"
-      onclick="deleteData()">
-      🗑️ Hapus
-  </button>
-
-  <button class="btn btn-secondary"
-      onclick="printResume()">
-      🖨️ Cetak
-  </button>
-
-  <button class="btn btn-dark"
-      onclick="resetForm()">
-      ↺ Reset
-  </button>
-
-</div>
 </section>
     <form id="tbForm">
 
